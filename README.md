@@ -4,6 +4,8 @@ FourKings
 このプロジェクトについて
 -----
 
+**[デモページ](http://myuon.digi2.jp/fourKings/index.html)**
+
 - fourKings.hs: 今回書いたプログラム。ブラウザでの実行には不要。
 - helper.js: 上のHaskellプログラムでFFIして使っているのでコンパイル時に必要。
 - fourKings.js: [haste-compiler](https://github.com/valderman/haste-compiler)によって`fourKings.hs`を変換したもの。これがないと実行は出来ないが、およそ人の読むものではない。
