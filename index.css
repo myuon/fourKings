@@ -1,0 +1,221 @@
+body {
+  background-color: #eee;
+  background-image: url("img/green.png");
+  margin: 5px;
+  padding: 0;
+}
+
+a, span{
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -ms-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+button{
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+h1 {
+  color: #000;
+  background-color: #ef9;
+  padding: 0.2em 1.5em;
+}
+
+div#otherhands div[class*="player-"] {
+  margin: 0;
+  float: left;
+}
+div#hands, div#otherhands div[class*="player-"] {
+  background-color: rgba(100, 205, 100, 0.6);
+  border: 2px solid #000;
+  padding: 5px;
+}
+div#hands { float: left; }
+div#hands div.hands, div#hands div.gained,
+div#otherhands div.hands, div#otherhands div.gained { float: left; }
+div#otherhands div.hands a { width: 10px; }
+div#otherhands div.hands a:last-child { width: 60px; }
+div#hands div.gained a, div#otherhands div.gained a { width: 10px; }
+div#hands div.gained a:last-child,
+div#otherhands div.gained a:last-child { width: 60px; }
+div#otherhands div p,
+div#hands > p {
+  background-color: #efe;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  margin: 5px 3px;
+  padding: 3px 10px;
+}
+
+div#newGame {
+  clear: both;
+  position: relative;
+  top: 100px;
+  left: 70px;
+  z-index: 2;
+  margin-bottom: -95px;
+}
+
+div#header {
+  clear: both;
+  background-color: #efe;
+  width: 12em;
+  position: relative;
+  top: 35px;
+  left: 20px;
+  z-index: 2;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  text-align: center;
+  padding: 3px;
+  margin-bottom: -50px;
+}
+div#header p:first-child { border-bottom: 2px solid #393; }
+div#header p:nth-child(2) { color: #f00; }
+
+div#layouts {
+  background-color: rgba(100, 255, 130, 0.5);
+  padding: 5px;
+  border: 5px double #ef9;
+  position: relative;
+  top: 5px;
+  clear: both;
+}
+
+div#layouts div {
+  background-color: #efe;
+  margin-left: 230px;
+  padding: 3px 10px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+div#layouts div.layouted { height: 150px; }
+div#layouts a { width: 40px; }
+div#layouts a:last-child { width: 60px; }
+div#layouts div.layouted a[class*="player-"]:before {
+  position: relative;
+  top: -20px;
+  font-size: x-small;
+  width: 40px;
+  display: inline-block;
+}
+div#layouts div.layouted a[class*="player-"] {
+  position: relative;
+  top: 20px;
+}
+div#hands > p { border-left: 10px solid #9fc; }
+div#otherhands div.player-1 p { border-left: 10px solid #c9f; }
+div#otherhands div.player-2 p { border-left: 10px solid #6cf; }
+div#otherhands div.player-3 p { border-left: 10px solid #f69; }
+div#layouts div.layouted .player-0:before { background-color: #9fc; content: "0"; }
+div#layouts div.layouted .player-1:before { background-color: #c9f; content: "1"; }
+div#layouts div.layouted .player-2:before { background-color: #6cf; content: "2"; }
+div#layouts div.layouted .player-3:before { background-color: #f69; content: "3"; }
+
+div#hands { margin-top: 20px; }
+div#hands div.hands > button {
+  float: left;
+  margin-right: 10px;
+}
+
+div#otherhands div.now {
+  border: 2px double #f00
+}
+
+div#table {
+  background-color: #fff;
+  display: none;
+  height: 300px;
+  padding-top: 10px;
+  position: absolute;
+  top: 50px;
+  left: 500px;
+  border: 3px solid #eee;
+}
+
+div#field > div:last-child {
+  background-color: #fff;
+  width: 600px;
+  height: 300px;
+  padding-top: 10px;
+  border: 3px solid #eee;
+}
+
+table {
+  border-top: #fff 3px double;
+  border-collapse: collapse;
+  color: #333;
+  width: 600px;
+  padding: 10px;
+}
+
+table caption {
+  font-size: larger;
+  font-weight: bold;
+  margin-bottom: 0.4em;
+}
+table tr {
+  height: 2.5em;
+  border-bottom: #dcd 1px solid;
+}
+table th {
+  background-color: #eee;
+  padding: 10px;
+}
+table th,
+table td { border-left: 1px solid #aaa; }
+table th:first-child,
+table td:first-child { border-left: none; }
+table td {
+  padding-right: 10px;
+  text-align: right;
+}
+
+p {
+  margin: 0;
+  line-height: 1.5em;
+}
+div { margin: 10px; }
+.card {
+  display: inline-block;
+  background-image: url("img/cards.png");
+  width: 60px;
+  height: 90px;
+}
+span.cards:hover > a[class*="button"]
+{
+  position: relative;
+  top: -7px;
+}
+span.cards > a:not([class*="button"]){ opacity: 0.6; }
+button.ball {
+  background-color: #ff9;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+button.ball:hover {
+  background-color: #f99;
+}
+
+section#how-to-play {
+  padding: 5px 15px;
+  background-color: rgba(150, 255, 150, 0.7);
+}
+
+section#how-to-play h2 { border-bottom: 1px solid #393; }
+section#how-to-play p { width: 50%; }
+section#how-to-play table { border: 2px solid #999; margin: 20px; }
+section#how-to-play table td { background-color: #fff; }
+
+footer {
+  color: #ccc;
+  font-size: smaller;
+}

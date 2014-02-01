@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FourKings</title>
+    <script type="text/javascript" src="fourKings.js"></script>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <h1>FourKings <a href="https://github.com/myuon/fourKings" style="font-size:small;">github</a></h1>
+    <div id="field">
+      <div id="otherhands"></div>
+      <div id="header"></div>
+      <div id="newGame"></div>
+      <div id="layouts"></div>
+      <div id="hands"></div>
+      <div style="clear: both;"></div>
+      <div id="table"></div>
+    </div>
+
+    <section id="how-to-play">
+      <h2>遊び方</h2>
+      <p><strong>要点</strong></p>
+      <ul>
+        <li>カードの出し方は大富豪とほぼ同じ(場が流れるときは最後に出した人が総取り)</li>
+        <li>親は得点の高いカードを4枚まで宣言できる</li>
+        <li>K:-10点/宣言カードは順に40点,30点,20点,15点/その他は書いてある数字が得点</li>
+        <li>高得点を目指そう！</li>
+      </ul>
+      
+      <table>
+        <tr><th>カード</th><th>説明</th></tr>
+        <tr><td>スペードのK</td><td>最初に持っている人は親</td></tr>
+        <tr><td>K</td><td>-10点</td></tr>
+        <tr><td>8</td><td>出した時点で場が流れる(8切り)</td></tr>
+        <tr><td>その他</td><td>通常のカードは書いてある数字がそのまま得点になる</td></tr>
+      </table>
+
+      <p><strong>詳しい解説</strong></p>
+      
+      <p>　このゲームは、王様(親)と市民(子)で財産を取り合うゲームです。たくさんの財産を手に入れた人の勝ちになります。</p>
+      <p>　はじめに、全員に同じ数だけカードが配られます(4人の場合は13枚)。スペードのKを持っている人が親です。</p>
+      <p>　カードの出し方は大富豪と同じです。親からカードを順番に出していきます。同じ数字のカードは一度に出すことが出来ます。次の人は、直前に出されたカードの組と同じ枚数で、より強いものを出さなくてはいけません。パスもできます。</p>
+      <p>　<strong>親はカードを4枚まで宣言することができます。</strong>ここで宣言された4枚は、宣言された順に得点が高くなります(順に40点,30点,20点,15点)。親はうまくカードを宣言することで一気に得点を稼ぐことができるでしょう。</p>
+      <p>　全員がパスをすると、場が流れます。このとき、場に出ている札は全て、その札を最後に出した人のものになります。これがその人の財産になります。</p>
+      <p>　誰かのカードがなくなった時点でゲームは終了です。最後に得点を計算して、一番多かった人の勝利です。</p>
+      
+      <p><strong>未実装の機能</strong></p>
+      <p>以下の機能はまだありません。開発者の気が向くのを待ちましょう。また、あなたはissueを投げて開発者を急かすことも、コミッターになることも出来ます。(<a href="https://github.com/myuon/fourKings">リポジトリ</a>)</p>
+      <ul>
+        <li>ゲーム終了・誰が勝利した等の情報の表示</li>
+        <li>8切り以外のローカルルール・Jokerをマスターカードとしての利用</li>
+        <li>切るカードを選択</li>
+        <li>ゲームのコンフィグ(8切りありなり、人数の増減など)</li>
+      </ul>
+      
+    </section>
+    <footer>
+      <p>トランプカード素材: <a href="http://sozai.7gates.net/docs/trump/">無料素材倶楽部</a></p>
+    </footer>
+  </body>
+</html>
