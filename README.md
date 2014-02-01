@@ -1,6 +1,20 @@
 FourKings
 =========
 
+このプロジェクトについて
+-----
+
+- fourKings.hs: 今回書いたプログラム。ブラウザでの実行には不要。
+- helper.js: 上のHaskellプログラムでFFIして使っているのでコンパイル時に必要。
+- fourKings.js: [haste-compiler](https://github.com/valderman/haste-compiler)によって`fourKings.hs`を変換したもの。これがないと実行は出来ないが、およそ人の読むものではない。
+- index.html/index.css/imgフォルダ: 実行に必要
+
+コンパイルは以下のコマンド。
+
+```
+~$ hastec fourKings.hs --with-js=helper.js
+```
+
 遊び方
 ------
 
